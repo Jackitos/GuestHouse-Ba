@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family:uber;
+    src:url('src/fonts/UberMoveMedium.otf');
+    font-family: uber-bold;
+    src:url('src/fonts/UberMoveBold.otf');
+}
+
+body{
+    font-family: 'uber', sans-serif;
+    margin: 0;
+}
+
+/*body::-webkit-scrollbar{
+    width:10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:rgb(179, 116, 0);
+    border-radius:5px;
+}*/
+
+h1{ font-size:3em; }
+span{color: rgb(249, 157, 38)/*rgba(250, 157, 38)*/;}
+h2{ font-size: 3em; }
+h3{ font-size:2em; }
+p{ font-size:1.25em;}
+/*---------------------------------------------------------------------*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+    color: white;
+    background-color: rgba(250, 157, 38);
+}
+
+#btnServices{
+    width:20vw;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+    color: rgb(54,54,54);
+    background-color: rgb(237, 201, 154);
+}
+
+#btnServices:hover{
+    background-color:rgb(189, 153, 110);
+}
+
+button:hover{
+    background-color: rgb(201, 130, 38);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/*---------------------------------------------------------------------*/
+header{
+    background-color: rgb(245,245,245);
+    box-shadow: 2px 5px 20px rgba(0,0,0,0.3);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .img-container{
+    background-image: url('src/imgs/guest-house-logo.png');
+    background-size: cover;
+    height: 120px;
+    width:120px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header a{
+    padding: 10px;
+    text-decoration:none;
+    color:rgba(54,54,54);
+    font-family: uber-bold;
+}
+
+header a:hover{
+    color: rgb(201, 130, 38);
+}
+/*---------------------------------------------------------------------*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:140vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(src/imgs/LogoHero.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:rgb(223, 223, 223);
+    font-size: 100px;
+    margin:0px;
+}
+#hero p{
+    color:rgb(223, 223, 223);
+    font-size: 30px;
+    font-family: 'uber-bold';
+}
+/*---------------------------------------------------------------------*/
+#empty .container{
+    text-align: center;
+    padding:250px 12px;
+}
+#empty ul{
+    list-style: none;
+}
+#empty li{
+    font-size: 2em;
+    margin: 16px 0px;
+    font-family: uber-bold;
+}
+/*---------------------------------------------------------------------*/
+#nuestros-deptos{
+    background-color: rgb(217,148,66);
+    text-align: center;
+    color:rgb(245,245,245);
+    font-family: 'uber-bold';
+}
+
+#nuestros-deptos h2{
+    font-size: 5vw;
+    margin-top: 0;
+    text-shadow: 2px 10px 5px rgba(0,0,0, 0.5);
+}
+
+#nuestros-deptos p{
+    display: none;
+}
+
+#nuestros-deptos .container{
+    padding:100px 10px;
+}
+
+#nuestros-deptos .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(src/imgs/villa-urquiza.png);
+}
+
+.card:nth-child(2){
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(src/imgs/palermo-hollywood.png);
+} 
+
+.card:nth-child(3){
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url(src/imgs/belgrano-r.png);
+} 
+/*---------------------------------------------------------------------*/
+
+#services .container{
+    text-align: center;
+    padding: 50px;
+}
+
+#services h2{
+    font-family: uber-bold; 
+}
+
+#services h3{
+    font-family: 'uber-bold';
+}
+
+#services p{
+    font-family: 'uber-bold';
+}
+
+#services button{
+    width: 200px;
+}
+/*---------------------------------------------------------------------*/
+#our-clients{
+    background-color: rgba(217, 148, 66);
+    text-align: center;
+    margin:0;
+}
+
+#our-clients .container{
+    color:black;
+    font-family: 'uber-bold';;
+    padding: 50px 10px;
+}
+
+#our-clients h2{
+    margin: 0;
+    color: rgba(245,245,245);
+    font-size: 5vw;
+}
+
+#our-clients h4{
+    font-size:25px;
+    margin: 0;
+}
+
+#our-clients .client{
+    flex-direction: column;
+    margin: 20px;
+    padding: 30px 0px;
+    border-radius: 10px;
+    background-color: rgb(245,245,245);
+}
+
+#stars{
+    width:150px;
+}
+/*---------------------------------------------------------------------*/
+footer{
+    background-color: rgb(54,54,54);
+    color: rgb(245,245,245);
+}
+
+footer .container{
+    height:150px;
+    text-align: center;
+}
+
+footer p{
+    margin:20px 0 0 100px;
+}
+
+footer #social-media{
+    display:inline;
+    font-family: uber-bold;
+}
+
+footer #phone{
+    font-family: uber-bold;
+}
+
+footer #number{
+    font-family: uber-bold;
+}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .img-container{
+        background-image: url(src/imgs/guest-house-logo.png);
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 50px;
+    }
+
+    #nuestros-deptos .deptos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-deptos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-deptos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-deptos .card{
+        padding: 50px;
+    }
+
+    #our-clients .clientcards{
+        display: flex;
+        justify-content: center;
+    }
+
+    #our-clients .client{
+        padding: 20px;
+    }
+
+    #our-clients p{
+        margin-bottom: 20px;
+        width: 20vw;
+    }
+
+    #our-clients h2{
+        text-shadow: 2px 10px 5px rgba(0,0,0, 0.5);
+    }
+
+    #services{
+        text-align: center;
+    }
+
+    #services .container{
+        padding:50px;
+    }
+
+    #services h2{
+        color: rgba(54,54,54);
+        margin: 0;
+        text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
+    }
+
+    #services h3{
+        color: rgba(217, 148, 66);
+        margin-right: 20px;
+    }
+
+    #services .principal{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #services #first-subtitle{
+        font-size: 1.8em;
+        font-weight:bold;
+    }
+
+    #services #second-subtitle{
+        font-weight:bold;
+    }
+}
