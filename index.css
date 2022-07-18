@@ -7,14 +7,22 @@ html{
 }
 
 @font-face{
-    font-family:uber;
-    src:url('src/fonts/UberMoveMedium.otf');
     font-family: uber-bold;
     src:url('src/fonts/UberMoveBold.otf');
 }
 
+@font-face{
+    font-family: allerta;
+    src:url('src/fonts/AllertaStencil-Regular.ttf');
+}
+
+@font-face{
+    font-family: kaushan;
+    src:url('src/fonts/KaushanScript-Regular.otf');
+}
+
 body{
-    font-family: 'uber', sans-serif;
+    font-family: uber-bold;
     margin: 0;
 }
 
@@ -98,7 +106,6 @@ header a{
     padding: 10px;
     text-decoration:none;
     color:rgba(54,54,54);
-    font-family: uber-bold;
 }
 
 header a:hover{
@@ -111,13 +118,13 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height:140vh;
+    height:100vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(src/imgs/LogoHero.png);
+    ,url(src/imgs/Puerto-Madero.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -125,53 +132,31 @@ header a:hover{
 
 #hero h1{
     color:rgb(223, 223, 223);
-    font-size: 100px;
+    font-size: 50px;
     margin:0px;
 }
 #hero p{
     color:rgb(223, 223, 223);
-    font-size: 30px;
-    font-family: 'uber-bold';
+    font-size: 20px;
+    margin:0px;
 }
 /*---------------------------------------------------------------------*/
-#empty .container{
-    text-align: center;
-    padding:250px 12px;
-}
-#empty ul{
-    list-style: none;
-}
-#empty li{
-    font-size: 2em;
-    margin: 16px 0px;
-    font-family: uber-bold;
-}
 /*---------------------------------------------------------------------*/
 #nuestros-deptos{
-    background-color: rgb(217,148,66);
     text-align: center;
     color:rgb(245,245,245);
-    font-family: 'uber-bold';
 }
 
 #nuestros-deptos h2{
     font-size: 5vw;
-    margin-top: 0;
-    text-shadow: 2px 10px 5px rgba(0,0,0, 0.5);
-}
-
-#nuestros-deptos p{
-    display: none;
-}
-
-#nuestros-deptos .container{
-    padding:100px 10px;
+    color:rgba(54,54,54);
 }
 
 #nuestros-deptos .card{
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
     background-position: center center;
     background-size: cover;
-    padding: 50px;
+    padding: 30px;
     margin: 20px;
     border-radius: 15px;
 }
@@ -208,19 +193,18 @@ header a:hover{
 
 #services .container{
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 #services h2{
-    font-family: uber-bold; 
+    font-size: 5vw;
 }
 
 #services h3{
-    font-family: 'uber-bold';
+    font-size: 3vw;
 }
 
 #services p{
-    font-family: 'uber-bold';
 }
 
 #services button{
@@ -228,20 +212,18 @@ header a:hover{
 }
 /*---------------------------------------------------------------------*/
 #our-clients{
-    background-color: rgba(217, 148, 66);
     text-align: center;
     margin:0;
 }
 
 #our-clients .container{
     color:black;
-    font-family: 'uber-bold';;
     padding: 50px 10px;
 }
 
 #our-clients h2{
     margin: 0;
-    color: rgba(245,245,245);
+    color: rgba(54,54,54);
     font-size: 5vw;
 }
 
@@ -259,8 +241,9 @@ header a:hover{
 }
 
 #stars{
-    width:150px;
+    width:120px;
 }
+
 /*---------------------------------------------------------------------*/
 footer{
     background-color: rgb(54,54,54);
@@ -278,15 +261,12 @@ footer p{
 
 footer #social-media{
     display:inline;
-    font-family: uber-bold;
 }
 
 footer #phone{
-    font-family: uber-bold;
 }
 
 footer #number{
-    font-family: uber-bold;
 }
 
 /*---------------------------------------------------------------------*/
@@ -319,22 +299,32 @@ footer #number{
         padding-right: 50px;
     }
 
+    #nuestros-deptos{
+        background-color: green;
+    }
+
     #nuestros-deptos .deptos{
         display: flex;
-        justify-content: center;
+        background-color: red;
     }
 
-    #nuestros-deptos p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-deptos h3{
-        margin-top: 0;
-    }
-
+    
     #nuestros-deptos .card{
+        height: 50vh;
+        width:200vw;
         padding: 50px;
+    }
+
+    #nuestros-deptos h2{
+        color: rgba(54,54,54);
+        font-size: 2vw;
+        span {
+            min-height: 100px;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid aqua;
+          }
+        margin-right: 70vw;
     }
 
     #our-clients .clientcards{
@@ -353,6 +343,7 @@ footer #number{
 
     #our-clients h2{
         text-shadow: 2px 10px 5px rgba(0,0,0, 0.5);
+        font-size: 5vw;
     }
 
     #services{
@@ -364,6 +355,7 @@ footer #number{
     }
 
     #services h2{
+        font-size: 5vw;
         color: rgba(54,54,54);
         margin: 0;
         text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
@@ -387,5 +379,19 @@ footer #number{
 
     #services #second-subtitle{
         font-weight:bold;
+    }
+
+    #hero{
+        flex-direction: column;
+    }
+
+    #hero h1{
+        color:rgb(223, 223, 223);
+        font-size: 5vw;
+    }
+    
+    #hero p{
+        color:rgb(223, 223, 223);
+        font-size: 30px;
     }
 }
