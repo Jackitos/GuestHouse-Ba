@@ -26,17 +26,8 @@ body{
     margin: 0;
 }
 
-/*body::-webkit-scrollbar{
-    width:10px;
-}
-
-body::-webkit-scrollbar-thumb{
-    background:rgb(179, 116, 0);
-    border-radius:5px;
-}*/
-
 h1{ font-size:3em; }
-span{color: rgb(249, 157, 38)/*rgba(250, 157, 38)*/;}
+span{color: rgba(217, 148, 66);}
 h2{ font-size: 3em; }
 h3{ font-size:2em; }
 p{ font-size:1.25em;}
@@ -142,24 +133,38 @@ header a:hover{
 }
 /*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
-#nuestros-deptos{
-    text-align: center;
-    color:rgb(245,245,245);
-}
 
-#nuestros-deptos h2{
-    font-size: 5vw;
-    color:rgba(54,54,54);
+#nuestros-deptos .container{
+    text-align: center;
+    background-color: rgb(241,179,84);
+    padding: 50px;
 }
 
 #nuestros-deptos .card{
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    color: rgba(245,245,245);
+    text-align: center;
     background-position: center center;
     background-size: cover;
-    padding: 30px;
-    margin: 20px;
     border-radius: 15px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    padding: 30px;
+    margin: 15px;
 }
+
+#nuestros-deptos h2{
+    color: rgba(230,230,230);
+    font-size: 4.5vw;
+    margin-bottom: 0;
+}
+/*
+#nuestros-deptos .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}*/
 
 .card:first-child{
     background-image: linear-gradient(
@@ -197,14 +202,13 @@ header a:hover{
 }
 
 #services h2{
+    color: rgb(54,54,54);
     font-size: 5vw;
 }
 
 #services h3{
+    color: rgb(249, 157, 38);
     font-size: 3vw;
-}
-
-#services p{
 }
 
 #services button{
@@ -213,39 +217,48 @@ header a:hover{
 /*---------------------------------------------------------------------*/
 #our-clients{
     text-align: center;
-    margin:0;
 }
 
 #our-clients .container{
-    color:black;
-    padding: 50px 10px;
+    background-color: rgb(241,179,84);
+}
+
+#our-clients .clientcards{
+    justify-content: center;
+    color: rgba(54,54,54);
+    text-align: center;
+    padding: 30px;
+}
+
+#our-clients .client{
+    background-color: rgb(245,245,245);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    padding: 20px;
+    margin: 10px;
+    flex-direction: column;
+}
+
+#our-clients p{
+    width: 80vw;
 }
 
 #our-clients h2{
-    margin: 0;
-    color: rgba(54,54,54);
+    color: rgb(245,245,245);
+    margin:0;
     font-size: 5vw;
 }
 
 #our-clients h4{
-    font-size:25px;
+    font-size:20px;
     margin: 0;
 }
 
-#our-clients .client{
-    flex-direction: column;
-    margin: 20px;
-    padding: 30px 0px;
-    border-radius: 10px;
-    background-color: rgb(245,245,245);
-}
-
 #stars{
-    width:120px;
+    width:100px;
 }
 
 /*---------------------------------------------------------------------*/
-footer{
+/*footer{
     background-color: rgb(54,54,54);
     color: rgb(245,245,245);
 }
@@ -255,19 +268,19 @@ footer .container{
     text-align: center;
 }
 
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 footer p{
-    margin:20px 0 0 100px;
-}
+    margin:0;
+}*/
 
-footer #social-media{
-    display:inline;
-}
 
-footer #phone{
-}
-
-footer #number{
-}
 
 /*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
@@ -299,32 +312,34 @@ footer #number{
         padding-right: 50px;
     }
 
-    #nuestros-deptos{
-        background-color: green;
+/*---------------------------------------------------------------------*/
+
+    #nuestros-deptos .container{
+        background-color:rgb(241,179,84);
+        padding:120px;
     }
 
     #nuestros-deptos .deptos{
         display: flex;
-        background-color: red;
     }
 
-    
     #nuestros-deptos .card{
-        height: 50vh;
-        width:200vw;
-        padding: 50px;
+        border-radius: 10px;
+        height: 40vh;
+        width:30vw;
     }
 
     #nuestros-deptos h2{
-        color: rgba(54,54,54);
-        font-size: 2vw;
-        span {
-            min-height: 100px;
-            display: inline-flex;
-            align-items: center;
-            border: 1px solid aqua;
-          }
-        margin-right: 70vw;
+        color: rgba(245,245,245);
+        font-size: 2.5vw;
+        margin-bottom: 20px;
+    }
+
+/*---------------------------------------------------------------------*/
+
+    #our-clients .container{
+        background-color: rgb(241,179,84);
+        padding: 120px;
     }
 
     #our-clients .clientcards{
@@ -333,6 +348,8 @@ footer #number{
     }
 
     #our-clients .client{
+        background-color: rgb(245,245,245);
+        box-shadow: 10px 10px 20px rgba(0,0,0, 0.5);
         padding: 20px;
     }
 
@@ -342,26 +359,29 @@ footer #number{
     }
 
     #our-clients h2{
-        text-shadow: 2px 10px 5px rgba(0,0,0, 0.5);
-        font-size: 5vw;
+        color: rgb(245,245,245);
+        font-size: 2.5vw;
     }
+
+/*---------------------------------------------------------------------*/
 
     #services{
         text-align: center;
     }
 
     #services .container{
-        padding:50px;
+        padding:120px;
     }
 
     #services h2{
-        font-size: 5vw;
+        font-size: 2.5vw;
         color: rgba(54,54,54);
         margin: 0;
-        text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
+        /*text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);*/
     }
 
     #services h3{
+        font-size: 2vw;
         color: rgba(217, 148, 66);
         margin-right: 20px;
     }
@@ -373,7 +393,7 @@ footer #number{
     }
 
     #services #first-subtitle{
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-weight:bold;
     }
 
@@ -381,8 +401,11 @@ footer #number{
         font-weight:bold;
     }
 
+/*---------------------------------------------------------------------*/
+
     #hero{
         flex-direction: column;
+        height: 120vh;
     }
 
     #hero h1{
@@ -393,5 +416,98 @@ footer #number{
     #hero p{
         color:rgb(223, 223, 223);
         font-size: 30px;
+    }
+
+/*---------------------------------------------------------------------*/
+    footer{
+        width: 100%;
+        background-color: rgb(54,54,54);
+        color: white; 
+    }
+
+    .container-all-footer{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding:40px;
+    }
+
+    .container-body{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column1{
+        max-width: 400px;
+    }
+
+    .column1 #column1-title{
+        font-size: 22px;
+    }
+
+    .column1 #column1-subtitle {
+        font-size: 14px;
+        color:#C7C7C7;
+        margin-top: 20px;
+    }
+
+    .column2{
+        max-width: 400px;
+    }
+
+    .column2 p{
+        font-size: 22px;
+    }
+
+    .row{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .row img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .row label{
+        margin-top: 10px;
+        margin-left: 10px;
+        color:#C7C7C7;
+    }
+
+    .column3{
+        max-width: 400px;
+
+    }
+
+    .column3 p{
+        font-size: 22px;
+    }
+    
+    .row2{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .row2 img{
+        width: 38px;
+        height: 38px;
+    }
+
+    .row2 label{
+        margin-left: 20px;
+        max-width: 140px;
+        margin-top: 10px;
+    }
+
+    .container-footer{
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .copyright{
+        color: #C7C7C7;
     }
 }
