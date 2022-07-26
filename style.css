@@ -176,7 +176,7 @@ header a:hover{
 
 .deptos h2{
     text-align: center;
-    font-size: 3vw;
+    font-size: 2em;
     color: rgba(245,245,245);
 }
 
@@ -296,12 +296,12 @@ header a:hover{
 
 #services h2{
     color: rgb(54,54,54);
-    font-size: 5vw;
+    font-size: 2em;
 }
 
 #services h3{
     color: rgb(249, 157, 38);
-    font-size: 3vw;
+    font-size: 1.5em;
 }
 
 #services button{
@@ -332,19 +332,19 @@ header a:hover{
 }
 
 #our-clients p{
-    width: 80vw;
+    width: 100%;
 }
 
 #our-clients h2{
     color: rgb(245,245,245);
     margin:0;
-    font-size: 5vw;
+    font-size: 2em;
     /*put the h2 down*/
     margin-bottom: -30px;
 }
 
 #our-clients h4{
-    font-size:20px;
+    font-size:1.2em;
     margin: 0;
 }
 
@@ -353,24 +353,42 @@ header a:hover{
 }
 
 /*---------------------------------------------------------------------*/
-/*footer{
+footer{
     background-color: rgb(54,54,54);
     color: rgb(245,245,245);
-}
-
-footer .container{
-    height:150px;
     text-align: center;
-}
-
-footer .container{
-    height: 150px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-footer p{
-    margin:0;
-}*/
+.container-all-footer{
+    width: 100%;
+    padding:40px;
+}
+
+#marketplaces{
+    width: 100%;
+}
+
+.row img{
+    width: 10%;
+    height: 10%;
+}
+
+#row__twitter{
+    margin-right: 20px;
+}
+
+.column3{
+    margin:30px
+}
+
+.row2 img{
+    width: 10%;
+    height: 10%;
+}
+
+#row2__phone{
+    margin-right: 80px;
+}
+
