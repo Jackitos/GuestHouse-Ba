@@ -164,7 +164,7 @@
 
     #our-clients .container{
         background-color: rgb(241,179,84);
-        padding: 150px;
+        padding: 20vh;
     }
 
     #our-clients .clientcards{
@@ -196,7 +196,7 @@
     }
 
     #services .container{
-        padding:150px;
+        padding:20vh;
     }
 
     #services h2{
