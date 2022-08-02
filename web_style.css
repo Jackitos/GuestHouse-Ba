@@ -1,4 +1,14 @@
 @media (min-width:720px){
+
+:root{
+    --color-primario:rgba(250, 157, 38);
+    --color-secundario:rgba(217, 148, 66);
+    --hover:rgb(175, 123, 18);
+    --color-secciones: rgb(241,179,84);
+    --darkColor:rgba(54,54,54);
+    --soft-white:rgb(245,245,245);
+}
+
     header{
         z-index: 1;
         position: fixed;
@@ -12,7 +22,7 @@
 
     header .img-subContainer{
         width: 15%;
-        background-color: rgb(249,156,37);
+        background-color:var(--color-primario);
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -23,7 +33,7 @@
         background-size: cover;
         height: 20vh;
         width: 10vw;
-        background-color: rgb(249,156,37);
+        background-color: var(--color-primario);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -42,7 +52,7 @@
 
 #some__services h2{
     font-size: 2em;
-    color: rgba(54,54,54);
+    color: var(--darkColor);
 }
 
 #some__services p{
@@ -75,7 +85,7 @@
 /*---------------------------------------------------------------------*/
 
     #nuestros-deptos .container{
-        background-color:rgb(241,179,84);
+        background-color:var(--color-secciones);
         padding:120px;
     }
 
@@ -90,20 +100,20 @@
     }
 
     #nuestros-deptos h2{
-        color: rgba(245,245,245);
+        color: var(--soft-white);
         font-size: 2.5vw;
         margin-bottom: 20px;
     }
 
     #nuestros-deptos h3{
-        color: rgba(245,245,245);
+        color: var(--soft-white);
         font-size: 2vw;
         margin-bottom: 30px;
     }
 /*---------------------------------------------------------------------*/
 .deptos{
     display: flex;
-    background: rgb(241,179,84);
+    background: var(--color-secciones);
     /*margin-top: 100px;*/
     padding: 50px;
 }
@@ -111,7 +121,7 @@
 .deptos h2{
     text-align: center;
     font-size: 3vw;
-    color: rgba(245,245,245);
+    color: var(--soft-white);
     margin-bottom: 0;
 }
 
@@ -141,7 +151,7 @@
 .item__title{
     position: absolute;
     background-color: rgba(0,0,0,0.5);
-    color: rgba(245,245,245);
+    color: var(--soft-white);
     top: 0;
     left: 0;
     margin-top: 0;
@@ -163,7 +173,7 @@
 /*---------------------------------------------------------------------*/
 
     #our-clients .container{
-        background-color: rgb(241,179,84);
+        background-color: var(--color-secciones);
         padding: 20vh;
     }
 
@@ -173,7 +183,7 @@
     }
 
     #our-clients .client{
-        background-color: rgb(245,245,245);
+        background-color: var(--soft-white);
         box-shadow: 10px 10px 30px rgba(0,0,0, 0.3);
         padding: 20px;
         border-radius: 10px;
@@ -201,14 +211,14 @@
 
     #services h2{
         font-size: 2.5vw;
-        color: rgba(54,54,54);
+        color: var(--darkColor);
         margin: 0;
         /*text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);*/
     }
 
     #services h3{
         font-size: 2vw;
-        color: rgba(217, 148, 66);
+        color: var(--color-secundario);
         margin-right: 20px;
     }
 
@@ -247,7 +257,7 @@
 /*---------------------------------------------------------------------*/
     footer{
         width: 100%;
-        background-color: rgb(54,54,54);
+        background-color: var(--darkColor);
         color: white; 
     }
 
@@ -278,7 +288,7 @@
 
     .column1 #column1-subtitle {
         font-size: 14px;
-        color:#C7C7C7;
+        color:var(--soft-white);
         margin-top: 20px;
     }
 
@@ -303,11 +313,12 @@
     .row label{
         margin-top: 10px;
         margin-left: 10px;
-        color:#C7C7C7;
+        color:var(--soft-white);
     }
 
     .column3{
         max-width: 400px;
+        margin: 0;
 
     }
 
@@ -339,6 +350,10 @@
     }
 
     .copyright{
+        color: #C7C7C7;
+    }
+
+    .terms{
         color: #C7C7C7;
     }
 }
