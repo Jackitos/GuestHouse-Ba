@@ -342,6 +342,22 @@
         margin-top: 10px;
     }
 
+    .img__location{
+        width: 25px;
+        height: 30px;
+    }
+
+    
+    #row__email{
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+/* 
+    .img__email{
+    } */
+
     .container-footer{
         width: 100%;
         display: flex;
