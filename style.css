@@ -125,7 +125,6 @@ header a:hover{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 #hero h1{
@@ -440,6 +439,9 @@ footer{
 
 #row__phone{
     display: flex;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 #row__email{
