@@ -9,6 +9,9 @@
     --soft-white:rgb(245,245,245);
 }
 
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
     header{
         z-index: 1;
         position: fixed;
@@ -45,6 +48,8 @@
     }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 #some__services .container{
     padding: 200px;
 }
@@ -81,6 +86,8 @@
     padding: 30px;
     margin: 10px;
 }
+
+/*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 
     #nuestros-deptos .container{
@@ -109,11 +116,15 @@
         font-size: 2vw;
         margin-bottom: 30px;
     }
+
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 .deptos{
     display: flex;
+    flex-wrap: wrap;
     background: var(--color-secciones);
-    /*margin-top: 100px;*/
+    margin-top: 100px;
     padding: 50px;
 }
 
@@ -121,10 +132,11 @@
     text-align: center;
     font-size: 3vw;
     color: var(--soft-white);
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .deptos__grid{
+    flex: 20%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -169,6 +181,70 @@
     transform: translateX(0%);
 }
 
+.overlay1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay1 .slideshow1{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img__slideshow1{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 40px 40px 0;
+    margin-left: -75%;
+}
+
+.slideshow1 p{
+    width: 50vw;
+    font-size: 2.5vh;
+    position: absolute;
+    right: 0;
+    margin-right:5%;
+    text-align: left;
+    color: #000;
+}
+
+.button__cerrar1{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 
     #our-clients .container{
@@ -198,6 +274,7 @@
         font-size: 2.5vw;
     }
 
+/*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 
     #services{
@@ -237,6 +314,7 @@
     }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
     #hero{
         flex-direction: column;
@@ -246,15 +324,17 @@
 
     #hero h1{
         color:rgb(223, 223, 223);
-        font-size: 5vw;
+        font-size: 5em;
     }
     
     #hero p{
         color:rgb(223, 223, 223);
-        font-size: 30px;
+        font-size: 2em;
     }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
     footer{
         width: 100%;
         background-color: var(--darkColor);
@@ -354,9 +434,6 @@
         justify-content: center;
         align-items: center;
 }
-/* 
-    .img__email{
-    } */
 
     .container-footer{
         width: 100%;

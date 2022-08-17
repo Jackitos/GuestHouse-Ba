@@ -41,7 +41,7 @@ span{color:var(--color-secundario);}
 h2{ font-size: 5em; }
 h3{ font-size:2em; }
 p{ font-size:1.25em;}
-/*---------------------------------------------------------------------*/
+
 button{
     font-size: 1.5em;
     font-weight: bold;
@@ -73,7 +73,10 @@ button{
     max-width: 100%;
     margin: auto;
 }
+
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 header{
     background-color: var(--soft-white);
     box-shadow: 2px 5px 20px rgba(0,0,0,0.3);
@@ -108,7 +111,10 @@ header a{
 header a:hover{
     color: rgb(201, 130, 38);
 }
+
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 #hero{
     display: flex;
     align-items: center;
@@ -139,6 +145,8 @@ header a:hover{
 }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 #some__services .container{
     justify-content: center;
     align-items: center;
@@ -178,7 +186,10 @@ header a:hover{
     padding: 30px;
     margin: 10px;
 }
+
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 .deptos{
     display: flex;
 }
@@ -219,6 +230,61 @@ header a:hover{
     border-radius: 15px;
 }
 
+.item__hover{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--soft-white);
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.button_depto1{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
+.button_depto2{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
+.button_depto3{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
+.button_depto4{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
+.button_depto5{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
+.button_depto6{
+    font-size: 1.2em;
+    font-family: uber-bold;
+    cursor: pointer;
+}
+
 .deptos__img{
     width: 100%;
     height: 100%;
@@ -231,10 +297,362 @@ header a:hover{
     transform: translateX(0%);
 }
 
+.deptos__item:hover .item__hover{
+    transform: translateX(0%);
+}
+
 .deptos h2{
     font-size: 2em;
 }
 
+.overlay1{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay1 .slideshow1{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow1{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow1 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar1{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.overlay2{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay2 .slideshow2{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow2{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow2 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar2{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.overlay3{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay3 .slideshow3{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow3{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow3 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar3{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.overlay4{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay4 .slideshow4{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow4{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow4 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar4{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+
+.overlay5{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay5 .slideshow5{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow5{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow5 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar5{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.overlay6{
+    display: none;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay6 .slideshow6{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__slideshow6{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px ;
+    overflow:hidden; 
+}
+
+.slideshow6 p{
+    font-size: 1em;
+    font-family: uber-bold;
+    padding: 20px;
+}
+
+.button__cerrar6{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    width: 30px;
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
 
 /*#nuestros-deptos .container{
     text-align: center;
@@ -296,6 +714,8 @@ header a:hover{
     )
     ,url(src/imgs/belgrano-r.png);
 }*/ 
+
+/*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 
 #services .container{
@@ -316,7 +736,10 @@ header a:hover{
 #services button{
     width: 200px;
 }
+
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 #our-clients{
     text-align: center;
 }
@@ -363,6 +786,8 @@ header a:hover{
 }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
 footer{
     background-color: var(--darkColor);
     color:var(--soft-white);

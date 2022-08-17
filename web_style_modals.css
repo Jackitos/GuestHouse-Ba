@@ -1,0 +1,321 @@
+                                /*MODALS PARA LA SECCION DE DEPARTAMENTOS*/
+@media (min-width:720px){
+    .overlay2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .7s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .overlay2 .slideshow2{
+        width: 90%;
+        height: 90%;
+        background-color: rgba(255,255,255,.9);
+        color: #000;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__slideshow2{
+        height: 100%;
+        width: 40%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .slideshow2 p{
+        width: 50vw;
+        font-size: 2.5vh;
+        position: absolute;
+        right: 0;
+        margin-top: -5%;
+        margin-right:2%;
+        text-align: left;
+        color: #000;
+    }
+    
+    .button__cerrar2{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.9);
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+    
+    .overlay3{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .7s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .overlay3 .slideshow3{
+        width: 90%;
+        height: 90%;
+        background-color: rgba(255,255,255,.9);
+        color: #000;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__slideshow3{
+        height: 100%;
+        width: 30%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .slideshow3 p{
+        width: 50vw;
+        font-size: 2.5vh;
+        position: absolute;
+        right: 0;
+        text-align: left;
+        color: #000;
+        margin-top: -10%;
+        margin-right: 12%;
+    }
+    
+    .button__cerrar3{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.9);
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+
+    .overlay4{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .7s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .overlay4 .slideshow4{
+        width: 90%;
+        height: 90%;
+        background-color: rgba(255,255,255,.9);
+        color: #000;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__slideshow4{
+        height: 100%;
+        width: 40%;
+        object-position: cover;
+        object-fit: cover;
+        overflow:hidden;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .slideshow4 p{
+        width: 50vw;
+        font-size: 2.5vh;
+        position: absolute;
+        right: 0;
+        margin-top: -10%;
+        margin-right:2%;
+        text-align: left;
+        color: #000;
+    }
+    
+    .button__cerrar4{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.9);
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+    
+    .overlay5{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        z-index: 100;
+        display: flex;
+        /* display: none; */
+        justify-content: center;
+        align-items: center;
+        transition: all .7s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .overlay5 .slideshow5{
+        width: 90%;
+        height: 90%;
+        background-color: rgba(255,255,255,.9);
+        color: #000;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__slideshow5{
+        height: 100%;
+        width: 40%;
+        overflow:hidden;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .slideshow5 p{
+        width: 50vw;
+        font-size: 2.5vh;
+        position: absolute;
+        right: 0;
+        margin-top: -10%;
+        margin-right:2%;
+        text-align: left;
+        color: #000;
+        padding: 0;
+    }
+    
+    .button__cerrar5{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.9);
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+
+    .overlay6{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.6);
+        z-index: 100;
+        display: flex;
+        /* display: none; */
+        justify-content: center;
+        align-items: center;
+        transition: all .7s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .overlay6 .slideshow6{
+        width: 90%;
+        height: 90%;
+        background-color: rgba(255,255,255,.9);
+        color: #000;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__slideshow6{
+        height: 100%;
+        width: 40%;
+        overflow:hidden;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .slideshow6 p{
+        width: 50vw;
+        font-size: 2.5vh;
+        position: absolute;
+        right: 0;
+        margin-top: -5%;
+        padding: 0;
+        text-align: left;
+        color: #000;
+    }
+    
+    .button__cerrar6{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        background-color: rgba(0,0,0,.9);
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
