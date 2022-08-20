@@ -134,12 +134,12 @@ header a:hover{
 }
 
 #hero h1{
-    color:rgb(223, 223, 223);
+    color:white;
     font-size: 50px;
     margin:0px;
 }
 #hero p{
-    color:rgb(223, 223, 223);
+    color:white;
     font-size: 20px;
     margin:0px;
 }
@@ -247,6 +247,7 @@ header a:hover{
     transition: .5s ease-in-out;
     border-radius: 15px;
     flex-direction: column;
+    /* add blur */
 }
 
 .button_depto1{
@@ -839,6 +840,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#logo__twitter{
+    margin-left: 10px;
 }
 
 .img__email{
