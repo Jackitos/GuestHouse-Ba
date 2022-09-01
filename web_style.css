@@ -49,42 +49,43 @@
   /*---------------------------------------------------------------------*/
   /*---------------------------------------------------------------------*/
 
-  #some__services .container__all{
+  #some__services{
     padding: 20vh;
-  }
-
-  .subServices{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #4c4c4c;
   }
 
-  .containerS{
-    width: 100%;
-    margin:0 auto;
+  #some__services .wrapper__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
   }
 
-  .boxS{
-    padding: 50px;
+  .box{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .boxS p{
-    color: #4c4c4c;
-    margin:10px 0;
+  #descr__service{
+    font-size: .8em;
+    text-align:left;
   }
 
-  #descr__item{
-    font-size: .8rem;
-    height: 200px;
+  #box__disponibilidad{
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
   }
 
-  #box__liq__dolares{
-    margin-bottom: 250px;
+  #box__marketing{
+    margin-top: 30px;
   }
 
   /*---------------------------------------------------------------------*/
@@ -293,7 +294,6 @@
     font-size: 2.5vw;
     color: var(--darkColor);
     margin: 0;
-    /*text-shadow: 20px 5px 10px rgba(0,0,0, 0.5);*/
   }
 
   #services h3 {
@@ -310,7 +310,6 @@
 
   #services #first-subtitle {
     font-size: 1.5em;
-    font-weight: bold;
   }
 
   #services #second-subtitle {

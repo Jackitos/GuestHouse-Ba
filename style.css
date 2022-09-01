@@ -13,14 +13,15 @@ html {
 }
 
 @font-face {
-  font-family: allerta;
-  src: url("src/fonts/AllertaStencil-Regular.ttf");
+  font-family: uber-medium;
+  src: url("src/fonts/UberMoveMedium.otf");
 }
 
 @font-face {
-  font-family: kaushan;
-  src: url("src/fonts/KaushanScript-Regular.otf");
+  font-family: averta-bold;
+  src: url("src/fonts/AvertaDemoPE-ExtraBold.otf");
 }
+
 
 body {
   font-family: uber-bold;
@@ -73,6 +74,7 @@ button {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: var(--darkColor);
   background-color: var(--color-primario);
+  /* font-family: averta-bold; */
 }
 
 #btnServices:hover {
@@ -161,49 +163,27 @@ header a:hover {
   padding: 20px;
 }
 
-.subServices{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 #some__services h2 {
   font-size: 2em;
-  color: var(--darkColor);
+  text-align: center;
 }
 
-#some__services img {
-  width: 100px;
-  height: auto;
-}
-
-.containerS{
-  width: 100%;
-  margin:0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 0rem;
-}
-
-.boxS{
-  padding: 2rem 2rem;
+.wrapper__container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-
-.boxS p{
-  color: #4c4c4c;
-  margin: 0;
-  margin-top: 10px;
+.box{
+  padding: 30px;
 }
 
-#descr__item{
-  font-size: .8em;
+#descr__service{
+  font-size: 1em;
+  text-align: left;
+  font-family: uber-medium;
 }
 
 /*---------------------------------------------------------------------*/
@@ -711,6 +691,12 @@ header a:hover {
 
 #services button {
   width: auto;
+  color: white;
+  background-color: #C18F43;
+}
+
+#services button:hover {
+  background-color: rgb(120,89,42, 1);
 }
 
 /*---------------------------------------------------------------------*/
@@ -741,6 +727,7 @@ header a:hover {
 
 #our-clients p {
   width: 100%;
+  font-family: uber-medium;
 }
 
 #our-clients h2 {

@@ -3,11 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="GuestHouseBA.com">
+    <meta name="author" content="Veronica">
+    <meta name="audience" content="all">
+    <meta name="description" content="Empresa dedicada al servicio de renta temporaria por todo Buenos Aires con estandares de hotel. Comodidades excelentes para que puedas disfrutar al maximo">
+    <meta name="keywords" content="Renta, Alquiler, Departamentos, Servicios">
+    <meta name="robots" content="index, all, follow">
+    <meta name="category" content="Departamentos">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device, initial-scale=1, maximum-scale=1">
+    <meta itemprop="telephone" content="11 4035-1417">
     <title>GuestHouseBA</title>
-
+    
+    <link rel="icon" href="./src/imgs/LogoHero.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web_style.css">
     <link rel="stylesheet" href="web_style_modals.css">
@@ -23,7 +32,7 @@
                 <div class="img-container"></div>
             </div>
             <nav>
-                <a href="#">Quienes Somos</a>
+                <a href="#">Quiénes Somos</a>
                 <a href="#services">Servicios</a>
                 <a href="#our-clients">Clientes</a>
                 <a href="#footer">Contacto</a>
@@ -44,42 +53,17 @@
             <h2>Nuestros Servicios</h2>
 
             <div class="principal">
-                <h3>Tenes un departamento <br> en Buenos Aires?</h4>
-                    <img src="src/imgs/services.png" />
+                <h3>¿Tenes un departamento <br> en Buenos Aires?</h4>
+                <img src="src/imgs/services.png" />
             </div>
             <p id="first-subtitle">Gestionamos tu <br> alquiler temporal</p>
             <p id="second-subtitle">Proveemos servicios de renta temporaria con estandares de hotel</p>
             <a href="#some__services">
-                <button id="btnServices">Saber Mas!</button>
+                <button id="btnServices">Saber Más!</button>
             </a>
         </div>
     </section>
     <!--|_____________________________________________________________________________| -->
-
-
-    <!-- <section id="nuestros-deptos">
-        <div class="container">
-            <h2>Algunos de nuestros Departamentos</h2>
-
-            <div class="deptos">
-                <div class="card">
-                    <h3>Villa Urquiza</h3>
-                    <button>+ info</button>
-                </div>
-
-                <div class="card">
-                    <h3>Palermo Hollywood</h3>
-                    <button>+ info</button>
-                </div>
-
-                <div class="card">
-                    <h3>Belgrano R</h3>
-                    <button>+ info</button>
-                </div>
-            </div>
-
-        </div>
-    </section>          -->
 
     <!-- ***********************************    MODALS  **************************  -->
     <div class="overlay1">
@@ -377,188 +361,78 @@
 
     <!-- ***********************************    ALGUNOS SERVICIOS  **************************  -->
     <section id="some__services">
-        <div class="container__all">
-            <div class="subServices">
-            <h2>Ventajas de gestionar tu departamento con nosotros</h2>
-            </div>
-
-            <div class="containerS">
-            <div class="boxS">
+        <h2>Ventajas de gestionar tu departamento con nosotros</h2>
+        <div class="wrapper__container">
+            <div class="box">
                 <img src="./src/imgs/atencion 24_7-servicios.png"/>
-                <p>ATENCION AL CLIENTE LAS <span>24HS</span></p>
-                <p id="descr__item">
-                    Gestión de cualquier necesidad que
+                <p>ATENCIÓN AL CLIENTE LAS <span>24HS</span></p>
+                <p id="descr__service">Gestión de cualquier necesidad que
                     tenga el huésped 24/7 <br>
-                    Realización de contratos
-                </p>
+                    Realización de contratos</p>
             </div>
 
-            <div class="boxS">
+            <div class="box" id="box__disponibilidad">
                 <img src="./src/imgs/disponible-inmueble-servicios.png"/>
                 <p>DISPONIBILIDAD DE TU INMUEBLE</p>
-                <p id="descr__item">
-                    No estás atado a un contrato
+                <p id="descr__service">No estás atado a un contrato
                     convencional que te prive de la
                     posesión de tu inmueble por un
                     periodo extenso. <br> <br>
                     EL PROPIETARIO ELIGE QUE TIPO DE ESTADÍA PREFIERE. <br><br>
-                    Los periodos más largo no superan los 6 meses o periodos cortos (desde 3 días).
-                </p>
+                    Los periodos más largo no superan los 6 meses o periodos cortos (desde 3 días).</p>
             </div>
 
-            <div class="boxS">
+            <div class="box">
                 <img src="./src/imgs/retorno-inversion-servicios.png"/>
-                <p>MAXIMIZAMOS EL RETORNO DE TU INVERSION</p>
-                <p id="descr__item">
-                    Tarifas variables y dinamicas segun estacionalidad, turismo, local o internacional
-                </p>
-            </div>
+                <p>MAXIMIZAMOS EL RETORNO DE TU INVERSIÓN</p>
+                <p id="descr__service">Tarifas variables y dinamicas segun estacionalidad, turismo, local o internacional</p>
             </div>
 
-            <div class="containerS">
-            <div class="boxS" id="box__liq__dolares">
+            <div class="box">
                 <img src="./src/imgs/liquidacion-dolares-servicios.png"/>
                 <p>LIQUIDACIÓN MENSUAL EN DOLARES</p>
             </div>
 
-            <div class="boxS">
+            <div class="box" id="box__marketing">
                 <img src="./src/imgs/marketing-medios-servicios.png"/>
                 <p>PUBLICIDAD Y MARKETING EN LOS PRINCIPALES MEDIOS</p>
-                <p id="descr__item">
-                    DIAGRAMACION de los anuncios,en los
+                <p id="descr__service">DIAGRAMACIÓN de los anuncios,en los
                     principales Marketplace establecem precis
-                    comunicacion con los huéspedes
-                </p>
+                    comunicación con los huéspedes</p>
             </div>
 
-            <div class="boxS">
+            <div class="box">
                 <img src="./src/imgs/limpieza-servicios.png"/>
                 <p>SERVICIO DE LIMPIEZA PROFESIONAL</p>
-                <p id="descr__item">
-                    El costo incluye los productos de limpieza
-                </p>
-            </div>
+                <p id="descr__service">El costo incluye los productos de limpieza</p>
             </div>
 
-            <div class="containerS">
-            <div class="boxS">
+            <div class="box">
                 <img src="./src/imgs/amenities-servicios.png"/>
                 <p>SET DE AMENITIES PARA BAÑOS</p>
-                <p id="descr__item">
-                    •JABÓN DE TOCADOR <br>
+                <p id="descr__service"> •JABÓN DE TOCADOR <br>
                     •SHAMPOO <br>
                     •PAPEL HIGIENICO(2JUECOS POR BAÑO) <br>
-                    •ACONDICIONADOR
-                </p>
+                    •ACONDICIONADOR</p>
             </div>
 
-            <div class="boxS">
+            <div class="box">
                 <img src="./src/imgs/paquete-bienve-servicios.png"/>
                 <p>PAQUETE DE BIENVENIDA PARA LOS NUEVOS HUESPEDES</p>
-                <p id="descr__item">
-                    Botella de agua mineral y snacks varios, cafe te, etc
-                </p>
+                <p id="descr__service">Botella de agua mineral y snacks varios, cafe te, etc</p>
             </div>
 
-            <div class="boxS">
+            <div class="box">
                 <img src="./src/imgs/asesoramiento-ambientacion-servicios.png"/>
-                <p>ASESORAMIENTO EN LA AMBIENTACION</p>
-                <p id="descr__item">
-                    Equipo de disenadores, fotografo y proveedores <br> 
+                <p>ASESORAMIENTO EN LA AMBIENTACIÓN</p>
+                <p id="descr__service"> Equipo de disenadores, fotografo y proveedores <br> 
                     del rubro que piensan en resaltar cada detalle <br> 
-                    para que tu alojamiento sea unico
-                </p>
+                    para que tu alojamiento sea unico</p>
             </div>
-            </div>
+
         </div>
-
-
-
-            <!-- <div class="services__items1">
-
-                    <div class="service__1" id="service__item">
-                        <img src="/src/imgs/atencion 24_7-servicios.png" alt="">
-                        <p>ATENCION AL CLIENTE LAS <span>24HS</span></p>
-                        <p id="services__descr">
-                            Gestión de cualquier necesidad que
-                            tenga el huésped 24/7 <br>
-                            Realización de contratos</p>
-                    </div>
-    
-                    <div class="service__2" id="service__item">
-                        <img src="/src/imgs/disponible-inmueble-servicios.png" alt="">
-                        <p>DISPONIBILIDAD DE TU INMUEBLE</p>
-                        <p id="services__descr">No estás atado a un contrato
-                            convencional que te prive de la
-                            posesión de tu inmueble por un
-                            periodo extenso. <br> <br>
-                            EL PROPIETARIO ELIGE QUE TIPO DE ESTADÍA PREFIERE. <br><br>
-                            Los periodos más largo no superan los 6 meses o periodos cortos (desde 3 días).
-                        </p>
-                    </div>
-    
-                    <div class="service__3" id="service__item">
-                        <img src="./src/imgs/retorno-inversion-servicios.png"/>
-                        <p>MAXIMIZAMOS EL RETORNO DE TU INVERSION</p>
-                        <p id="services__descr">Tarifas variables y dinamicas segun estacionalidad, turismo, local o internacional</p>
-                    </div>
-
-            </div>
-
-            <div class="services__items2">
-
-                    <div class="service4" id="service__item">
-                        <img src="/src/imgs/liquidacion-dolares-servicios.png" alt="">
-                        <p>LIQUIDACIÓN MENSUAL EN DOLARES</p>                    
-                    </div>
-    
-                    <div class="service5" id="service__item">
-                        <img src="/src/imgs/marketing-medios-servicios.png" alt="">
-                        <p>PUBLICIDAD Y MARKETING EN LOS PRINCIPALES MEDIOS</p>
-                        <p id="services__descr">DIAGRAMACION de los anuncios,en los
-                            principales Marketplace establecem precis
-                            comunicacion con los huéspedes</p>                    
-                    </div>
-    
-                    <div class="service6" id="service__item">
-                        <img src="/src/imgs/limpieza-servicios.png" alt="">
-                        <p>SERVICIO DE LIMPIEZA PROFESIONAL</p>                    
-                        <p id="services__descr">EL COSTO INCLUYE LOS PRODUCTOS DE LIMPIEZA</p>
-                    </div>
-
-            </div>
-
-            <div class="services__items3">
-
-                    <div class="service7" id="service__item">
-                        <img src="/src/imgs/amenities-servicios.png" alt="">
-                        <p>SET DE AMENITIES PARA BAÑOS</p>
-                        <p id="services__descr">
-                            •JABÓN DE TOCADOR <br>
-                            •SHAMPOO <br>
-                            •PAPEL HIGIENICO(2JUECOS POR BAÑO) <br>
-                            •ACONDICIONADOR</p>
-                    </div>
-    
-                    <div class="service8" id="service__item">
-                        <img src="/src/imgs/paquete-bienve-servicios.png" alt="">
-                        <p>PAQUETE DE BIENVENIDA PARA LOS NUEVOS HUESPEDES</p>
-                        <p id="services__descr">BOTELLA DE AGUA MINERALYSNACKS VARIOS CAFE TEC</p>
-                    </div>
-    
-                    <div class="service9" id="service__item">
-                        <img src="/src/imgs/asesoramiento-ambientacion-servicios.png" alt="">
-                        <p>ASESORAMIENTO EN LA AMBIENTACION</p>
-                        <p id="services__descr">
-                            Equipo de disenadores, fotografo y proveedores <br> 
-                            del rubro que piensan en resaltar cada detalle <br> 
-                            para que tu alojamiento sea unico
-                        </p>
-                    </div>
-
-            </div> -->
-
     </section>
+
     <!--|________________________________________________________________________________| -->
 
     <!-- ***********************************    CLIENTES  **************************  -->
