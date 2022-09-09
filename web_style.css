@@ -310,6 +310,7 @@
 
   #services #first-subtitle {
     font-size: 1.5em;
+    color: var(--darkColor);
   }
 
   #services #second-subtitle {

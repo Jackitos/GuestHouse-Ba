@@ -166,6 +166,7 @@ header a:hover {
 #some__services h2 {
   font-size: 2em;
   text-align: center;
+  color: var(--darkColor);
 }
 
 .wrapper__container{
@@ -789,6 +790,14 @@ footer {
   width: 100%;
 }
 
+.copyright{
+  font-family: uber-medium;
+}
+
+.terms{ 
+  font-family: uber-medium;
+}
+
 .row img {
   width: 36px;
   height: 36px;
@@ -818,7 +827,7 @@ footer {
   align-items: center;
 }
 
-#row__twitter {
+#row__linktree {
   margin-right: 30px;
   display: flex;
   justify-content: center;
